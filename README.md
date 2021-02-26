@@ -226,14 +226,14 @@ On the Host:
 	alan@C:~/src/mxnet$ cp make/config.mk .
 
 	export CROSS_ROOT=/home/alan/rootfs-nano
-	export CROSS_COMPILE = /home/alan/toolchain/gcc-4.8.5-aarch64/bin
-	export CC = ${CROSS_COMPILE}/aarch64-unknown-linux-gnu-gcc
-	export CXX = ${CROSS_COMPILE}/aarch64-unknown-linux-gnu-g++
-	export LD = ${CROSS_COMPILE}/aarch64-unknown-linux-gnu-ld
-	export AR = ${CROSS_COMPILE}/aarch64-unknown-linux-gnu-ar
-	export AS = ${CROSS_COMPILE}/aarch64-unknown-linux-gnu-as
-	export RANLIB = ${CROSS_COMPILE}/aarch64-unknown-linux-gnu-ranlib
-	export NVCC = ${CROSS_ROOT}/usr/local/cuda/bin/nvcc
+	export CROSS_COMPILE=/home/alan/toolchain/gcc-4.8.5-aarch64/bin
+	export CC=${CROSS_COMPILE}/aarch64-unknown-linux-gnu-gcc
+	export CXX=${CROSS_COMPILE}/aarch64-unknown-linux-gnu-g++
+	export LD=${CROSS_COMPILE}/aarch64-unknown-linux-gnu-ld
+	export AR=${CROSS_COMPILE}/aarch64-unknown-linux-gnu-ar
+	export AS=${CROSS_COMPILE}/aarch64-unknown-linux-gnu-as
+	export RANLIB=${CROSS_COMPILE}/aarch64-unknown-linux-gnu-ranlib
+	export NVCC=${CROSS_ROOT}/usr/local/cuda/bin/nvcc
 	
 	export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$SYSROOT/usr/lib/aarch64-linux-gnu:$SYSROOT/lib/aarch64-linux-gnu:$SYSROOT/lib
 	export LC_ALL=C
